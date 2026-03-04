@@ -19,9 +19,9 @@
 
   --xxl-font-size: 120px;
   --xl-font-size: 80px;
-  --l-font-size: 25px;
-  --altline-text-size: 32px;
-  --text-font-size: 15px;
+  --l-font-size: 32px;
+  --m-font-size: 25px;
+  --text-font-size: 20px;
   --bold-font-weight: bold;
   --avg-font-weight: normal;
   --spiderman-font-family: Spiderman;
@@ -56,7 +56,7 @@ h2 {
 }
 
 h3 {
-  font-size: var(--l-font-size);
+  font-size: var(--m-font-size);
 }
 
 .primary-button {
@@ -85,7 +85,7 @@ h3 {
 }
 
 .small-button {
-  font-size: var(--l-font-size);
+  font-size: var(--m-font-size);
   font-weight: var(--bold-font-weight);
   padding-top: 20px;
   padding-bottom: 10px;
@@ -133,7 +133,7 @@ h3 {
 }
 
 .navbar-link {
-  font-size: var(--l-font-size);
+  font-size: var(--m-font-size);
   font-weight: var(--bold-font-weight);
   padding-top: 20px;
   padding-bottom: 10px;
@@ -146,7 +146,7 @@ h3 {
   width: 150px;
 }
 
-.navbar-link:hover{
+.navbar-link:hover {
   text-transform: uppercase;
   transform: scale(0.8);
 }
@@ -202,7 +202,7 @@ h3 {
 
 .alt-line {
   color: var(--dark-blue);
-  font-size: var(--altline-text-size);
+  font-size: var(--m-text-size);
   margin-top: -12px;
 }
 
@@ -225,16 +225,77 @@ h3 {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  padding: 200px;
 }
 
 .actors-title-element {
   display: flex;
   flex-direction: column;
+  padding: 200px;
+  padding-bottom: 100px;
 }
 
 .alt-line-actors {
   color: var(--dark-red);
-  font-size: var(--altline-text-size);
+  font-size: var(--m-text-size);
   margin-top: -12px;
+}
+
+.actors-cards-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+}
+
+.actors-card {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid var(--primary-light);
+  width: 25%;
+  gap: 50px;
+  height: 600px;
+}
+
+.card-image-container {
+  height: 300px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#peterImage {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 60%), url("../public/images/peter1.png");
+}
+
+#maryImage {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 60%), url("../public/images/mary1.png");
+}
+
+#harryImage {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 60%), url("../public/images/harry1.png");
+}
+
+.card-texts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 30px;
+}
+
+.card-name {
+  font-family: var(--spiderman-font-family);
+  font-size: var(--l-font-size);
+  text-transform: uppercase;
+}
+
+.card-alias {
+  font-family: var(--spiderman-font-family);
+  font-size: var(--m-font-size);
+  text-transform: uppercase;
+}
+
+.card-desc {
+  font-family: var(--normal-font-family);
+  font-size: var(--text-font-size);
 }
