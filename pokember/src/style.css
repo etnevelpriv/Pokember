@@ -1,6 +1,8 @@
 /* https://www.color-hex.com/color-palette/106355 */
 /* https://www.schemecolor.com/spiderman.php */
 /* https://www.dafont.com/the-amazing-spider-man.font */
+
+/* Base styles */
 @font-face {
   font-family: Spiderman;
   src: url(../public/fonts/the_amazing_spider_man/The\ Amazing\ Spider-Man.ttf);
@@ -10,8 +12,8 @@
 :root {
   --light-red: #DF1F2D;
   --dark-red: #DF1F2D;
-  --light-blue: #2B3784;
-  --dark-blue: #447BBE;
+  --dark-blue: #2B3784;
+  --light-blue: #447BBE;
   --primary-dark: #3f3f3f;
   --primary-light: #e2e2e2;
 
@@ -34,7 +36,9 @@ body {
   font-size: var(--text-font-size);
 }
 
-h1,h2,h3 {
+h1,
+h2,
+h3 {
   font-family: var(--spiderman-font-family);
   font-weight: var(--bold-font-weight);
 }
@@ -50,3 +54,72 @@ h2 {
 h3 {
   font-size: var(--l-font-size);
 }
+
+.primary-button {
+  color: var(--dark-red);
+  background-color: var(--dark-blue);
+  border: 2px solid var(--light-red);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  font-family: var(--spiderman-font-family);
+  text-align: center;
+}
+
+.primary-button:hover {
+  color: var(--dark-blue);
+  background-color: var(--light-red);
+}
+
+.secondary-button {}
+
+.secondary-button:hover {}
+
+.big-button {
+  font-size: var(--xxl-font-size);
+  font-weight: var(--bold-font-weight);
+  padding: 15px;
+}
+
+.small-button {
+  font-size: var(--l-font-size);
+  font-weight: var(--bold-font-weight);
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* NAV styles */
+
+.navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  background-color: transparent;
+  left: 0;
+  position: fixed;
+}
+
+.navbar-element {
+  padding: 20px;
+}
+
+.navbar-links {
+  gap: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar-logo {
+  height: 70px;
+  width: 70px;
+}
+
+.navbar-link {
+  color: var();
+}
+
+/* Hero styles */
