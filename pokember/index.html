@@ -1,4 +1,4 @@
-<!-- Ékezet nélkül fogom írni a szöveget a font miatt -->
+<!-- Ékezet nélk./public/images/logo-black.pngül fogom írni a szöveget a font miatt -->
 <!DOCTYPE html>
 <html lang="hu">
 
@@ -12,22 +12,46 @@
 
   <nav class="navbar" id="navBar">
     <div class="navbar-element">
-      <img src="./public/images/logo.png" class="navbar-logo" alt="pokember logo">
+      <img src="./public/images/logo-black.png" id="navLogo" class="navbar-logo" alt="pokember logo">
     </div>
     <div class="navbar-element navbar-links">
-      <a class="navbar-link primary-button small-button" href="#actors-section">szereplok</a>
-      <a class="navbar-link primary-button small-button" href="#plot-section">cselekmeny</a>
-      <a class="navbar-link primary-button small-button" href="#cinemas-section">vetitesek</a>
+      <a class="navbar-link navbar-link-black" href="#actorsSection">szereplok</a>
+      <a class="navbar-link navbar-link-black" href="#plot-section">cselekmeny</a>
+      <a class="navbar-link navbar-link-black " href="#cinemas-section">vetitesek</a>
     </div>
   </nav>
 
-  <div id="hero-section">
-    <div class="hero-element">
-          <h1 class="hero-title">pokember</h1>
-          <h3 class="hero-alttitle">| a baratsagos es kozkedvelt |</h3>
+  <div class="hero-section">
+    <div class="overlay"></div>
+    <div class="hero-element hero-title-element">
+      <h1 class="hero-title">pokember</h1>
+      <h3 class="alttitle"><span class="alt-line">|</span> A BARATSAGOS ES KOZKEDVELT<span class="alt-line">|</span>
+      </h3>
     </div>
-    <div class="hero-element">
-      <img src="./public/images/hero-image.png" alt="pokember hero kep">
+    <div class="hero-element hero-image-element">
+      <img class="hero-image" src="./public/images/hero-image.png" alt="pokember hero kep">
+    </div>
+  </div>
+
+  <div class="actors-section" id="actorsSection">
+    <div class="actors-title-element">
+      <h2 class="actors-title">szereplok</h2>
+      <h3 class="alttitle"><span class="alt-line-actors">|</span> A FILM FONTOSABB SZEREPLOI <span
+          class="alt-line-actors">|</span></h3>
+    </div>
+    <div class="actors-cards-container">
+      <div class="actors-card">
+        <div class="card-image">
+          <img src="" alt="Peter Parker, avagy Pokember">
+        </div>
+        <div class="card-texts">
+          <div class="card-name">Peter Parker</div>
+          <div class="card-alias">Pokember</div>
+          <div class="card-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi hic temporibus quidem
+            blanditiis. Aut soluta dicta autem aliquam, consectetur dignissimos? Odit mollitia vero dolorum harum a
+            voluptatem exercitationem laboriosam aperiam?</div>
+        </div>
+      </div>
     </div>
   </div>
 
