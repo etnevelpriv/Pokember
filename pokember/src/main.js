@@ -27,5 +27,4 @@ const updateNavBar = function () {
   };
 };
 
-
 document.addEventListener("DOMContentLoaded", init);

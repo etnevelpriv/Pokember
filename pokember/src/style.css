@@ -222,7 +222,6 @@ h3 {
   z-index: 1000;
   width: 100%;
   background-color: #000000;
-  height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -254,6 +253,23 @@ h3 {
   width: 25%;
   gap: 50px;
   height: 600px;
+  transition: all 0.3s ease;
+}
+
+.actors-card:hover .card-image-container {
+  box-shadow: inset 0px 0px 20px 20px rgba(255, 0, 0, 0.4);
+}
+
+.actors-card:hover .card-name {
+  color: var(--dark-red);
+}
+
+.actors-card:hover {
+  border-color: var(--dark-blue);
+}
+
+.actors-card:hover .card-alias {
+  color: var(--dark-blue);
 }
 
 .card-image-container {
@@ -262,6 +278,7 @@ h3 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  transition: all 0.3s ease;
 }
 
 #peterImage {
@@ -287,12 +304,14 @@ h3 {
   font-family: var(--spiderman-font-family);
   font-size: var(--l-font-size);
   text-transform: uppercase;
+  transition: all 0.3s ease;
 }
 
 .card-alias {
   font-family: var(--spiderman-font-family);
   font-size: var(--m-font-size);
   text-transform: uppercase;
+  transition: all 0.3s ease;
 }
 
 .card-desc {
